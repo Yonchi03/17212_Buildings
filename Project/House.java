@@ -14,13 +14,7 @@ class House extends Building {
     //Get method for the list
     protected static List<House> getHouseList() { return houseList; }
 
-    //Constructor
-    protected House(float area, String address, int numFloors, String ownerName) {
-        super(area, address);
-        this.numFloors = numFloors;
-        this.ownerName = ownerName;
-        houseList.add(this);
-    }
+
 
     //Method to find the most spacious house
     private static House mostSpacious(){

@@ -2,6 +2,7 @@ package Project;
 
 import org.jetbrains.annotations.Contract;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
@@ -53,5 +54,10 @@ public class RandomNumbers {
         } else {
             remover();
         }
+    }
+
+    public static String customFormat(long value) {
+        DecimalFormat myFormatter = new DecimalFormat("###,###");
+        return myFormatter.format(value);
     }
 }

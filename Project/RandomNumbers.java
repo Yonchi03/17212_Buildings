@@ -2,7 +2,6 @@ package Project;
 
 import org.jetbrains.annotations.Contract;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
@@ -11,15 +10,10 @@ public class RandomNumbers {
     static ArrayList<Byte> list = new ArrayList<>();
     static byte elementCounter = 20;
 
-    public static float getRandomDouble(float min, float max) {
-        return (float) ((Math.random() * ((max - min) + 1)) + min);
-    }
-
     public static int getRandomInteger(int min, int max) {
         return (int) ((Math.random() * ((max - min) + 1)) + min);
     }
 
-    ////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         for (int i = 1; i < 11; i++) {
             list.add((byte) i);
@@ -54,10 +48,5 @@ public class RandomNumbers {
         } else {
             remover();
         }
-    }
-
-    public static String customFormat(long value) {
-        DecimalFormat myFormatter = new DecimalFormat("###,###");
-        return myFormatter.format(value);
     }
 }

@@ -19,7 +19,6 @@ public class RandomNumbers {
         return (int) ((Math.random() * ((max - min) + 1)) + min);
     }
 
-    ////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         for (int i = 1; i < 11; i++) {
             list.add((byte) i);

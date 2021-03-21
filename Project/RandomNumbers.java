@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 public class RandomNumbers {
 
-    public static float getRandomDouble(float min, float max) {
+    public static float getRandomFloat(float min, float max) {
         return (float) ((Math.random() * ((max - min) + 1)) + min);
     }
 
